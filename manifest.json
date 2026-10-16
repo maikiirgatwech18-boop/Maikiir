@@ -1,0 +1,21 @@
+{
+  "name": "Maikiir First Web",
+  "short_name": "Maikiir",
+  "description": "My first PWA from Kalobeyei ICT Hub",
+  "start_url": "/Maikiir/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192.png/007bff/ffffff?text=M",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512.png/007bff/ffffff?text=M",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
