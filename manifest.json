@@ -1,4 +1,5 @@
-"name": "Maikiir Web App",
+{
+  "name": "Maikiir Web App",
   "short_name": "Maikiir",
   "description": "My first web design from Kalobeyei ICT Hub",
   "start_url": "./",
@@ -21,3 +22,5 @@
     }
   ]
 }
+Compose
+Write to Maikiir Gatwech Dual
