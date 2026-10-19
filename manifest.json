@@ -4,6 +4,7 @@
   "description": "My first web design from Kalobeyei ICT Hub",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#lightyellow",
-  "theme_color": "#4a148c"
+  "background_color": "#1d1ddd",
+  "theme_color": "#4a148c",
+  "id": "maikiir"
 }
