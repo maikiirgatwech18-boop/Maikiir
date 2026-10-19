@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+    <link rel="manifest" href="manifest.json">
+    <style> 
+      body { font-family: Arial; padding: 20px; text-align: center; background: lightyellow; }
+      h1 { color: blue; } 
+      a, button { margin: 10px; background: orange; color: white; padding: 10px 20px; text-decoration: none; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to maikiir first web design</h1>
+    <p>Name: Maikiir Gatwech Dual</p>
+    <p>Email: maikiirgatwech18@gmail.com</p>
+    <p>© 2026 maikiir Gatwech Dual. All rights reserved.</p>
+    <button onclick="welcome()">Click Me</button>
+    <br>
+    
+    <a href="about.html">About Page</a>
+    <a href="contact.html">Contact Page</a> <!-- ADD THIS LINE -->
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+</body>
+</html>
