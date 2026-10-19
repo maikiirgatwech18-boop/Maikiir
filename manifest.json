@@ -1,0 +1,9 @@
+{
+  "name": "Maikiir Web App",
+  "short_name": "Maikiir",
+  "description": "My first web design from Kalobeyei ICT Hub",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#lightyellow",
+  "theme_color": "#4a148c"
+}
