@@ -1,29 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Welcome</title>
-    <link rel="manifest" href="manifest.json">
-    <style> 
-      body { font-family: Arial; padding: 20px; text-align: center; background: lightyellow; }
-      h1 { color: blue; } 
-      a, button { margin: 10px; background: orange; color: white; padding: 10px 20px; text-decoration: none; border: none; border-radius: 5px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4a148c">
+  <title>Maikiir Web App</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="launchericon-192x192.png">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: Arial, sans-serif; 
+      background: linear-gradient(135deg, #4a148c, #7b1fa2); 
+      color: white; 
+      text-align: center; 
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+    h1 { 
+      color: #fff; 
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p { 
+      margin: 15px 0; 
+      font-size: 1.1em;
+    }
+    .btn { 
+      margin: 10px; 
+      background: orange; 
+      color: white; 
+      padding: 12px 25px; 
+      text-decoration: none; 
+      border: none; 
+      border-radius: 8px; 
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .btn:hover { background: #ff8c00; }
+    footer { margin-top: 30px; opacity: 0.8; font-size: 0.9em; }
+  </style>
 </head>
 <body>
-    <h1>Welcome to maikiir first web design</h1>
-    <p>Name: Maikiir Gatwech Dual</p>
-    <p>Email: maikiirgatwech18@gmail.com</p>
-    <p>© 2026 maikiir Gatwech Dual. All rights reserved.</p>
-    <button onclick="welcome()">Click Me</button>
-    <br>
+  <div class="container">
+    <h1>Welcome to Maikiir App</h1>
+    <p><b>Name:</b> Maikiir Gatwech Dual</p>
+    <p><b>Email:</b> maikiirgatwech18@gmail.com</p>
+    <p>This is my first PWA - Works offline!</p>
     
-    <a href="about.html">About Page</a>
-    <a href="contact.html">Contact Page</a> <!-- ADD THIS LINE -->
-    <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
-  }
-</script>
+    <button class="btn" onclick="alert('Welcome to Maikiir App!')">Click Me</button>
+    <br>
+    <a class="btn" href="about.html">About Page</a>
+    <a class="btn" href="contact.html">Contact Page</a>
+    
+    <footer>
+      <p>© 2026 Maikiir Gatwech Dual. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Register Service Worker for PWA
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
 </body>
 </html>
